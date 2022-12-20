@@ -6,10 +6,9 @@ const getUsersService = async (query) => {
     let searchFind;
     console.log(search);
     if (search) {
-        searchFind = { "name": { $in: [search] } };
         console.log(searchFind);
-        const result = await Users.find({name:{$in:[search]}})
-        // const result = await Users.find({ $text: { $search: search } });
+        // const result = await Users.find({name:{$in:[search]}})
+        const result = await Users.find({ $text: { $search: search } });
         console.log(result);
         return result;
     }
