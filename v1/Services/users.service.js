@@ -13,6 +13,7 @@ const getUsersService = async (query) => {
         return result;
     }
     const result = await Users.find(more);
+    return result;
 };
 const postUsersService = async (data) => {
     const result = await Users.create(data);
