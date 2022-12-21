@@ -1,15 +1,14 @@
 const Products = require("../Models/products.model");
 
 const getProductsService = async (query) => {
-    const { search,...more } = query;
-    // Products.index({ name: "text", email: "text" })
+    const { search, ...more } = query;
+
     let searchFind;
     console.log(search);
     if (search) {
         console.log(searchFind);
-        // const result = await Products.find({name:{$in:[search]}})
         const result = await Products.find({ $text: { $search: search } });
-        console.log(result);
+
         return result;
     }
     const result = await Products.find(more);
@@ -32,4 +31,9 @@ const updateProductsService = async (query, data) => {
     return result;
 };
 
-module.exports = { getProductsService, postProductsService, deleteProductsService, updateProductsService };
+module.exports = {
+    getProductsService,
+    postProductsService,
+    deleteProductsService,
+    updateProductsService,
+};
