@@ -1,7 +1,7 @@
 const Users = require("../Models/users.model");
 
 const getUsersService = async (query) => {
-    const { search } = query;
+    const { search,...more } = query;
     // Users.index({ name: "text", email: "text" })
     let searchFind;
     console.log(search);
@@ -12,7 +12,8 @@ const getUsersService = async (query) => {
         console.log(result);
         return result;
     }
-    // const result = await Users.find( {});
+    const result = await Users.find(more);
+    return result;
 };
 const postUsersService = async (data) => {
     const result = await Users.create(data);
