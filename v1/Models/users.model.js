@@ -84,7 +84,7 @@ const usersSchema = mongoose.Schema(
     }
 );
 
-usersSchema.index({name:"text", email:"text"})
+usersSchema.index({name:"text", email:"text",phone:"text"})
 
 const Users = mongoose.model("users", usersSchema);
 

@@ -4,15 +4,19 @@ const getUsersService = async (query) => {
     const { search } = query;
     // Users.index({ name: "text", email: "text" })
     let searchFind;
-    console.log(search);
+    console.log(typeof search);
     if (search) {
         searchFind = { "name": { $in: [search] } };
         console.log(searchFind);
-        const result = await Users.find({name:{$in:[search]}})
-        // const result = await Users.find({ $text: { $search: search } });
+        // const result = await Users.find({ name: { $in: [ search ] } })
+        const result = await Users.find({ $text: { $search: search } });
         console.log(result);
         return result;
     }
+    const result = await Users.find({})
+    // console.log(result);
+
+    return await result
     // const result = await Users.find( {});
 };
 const postUsersService = async (data) => {
