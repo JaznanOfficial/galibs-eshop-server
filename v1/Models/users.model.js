@@ -43,7 +43,7 @@ const usersSchema = mongoose.Schema(
         role: {
             // required: true,
             type: String,
-            default:"user",
+            default: "user",
             enum: {
                 values: ["admin", "moderator", "user"],
                 message: "{VALUE} is wrong. must be admin/moderator/user",
@@ -52,7 +52,7 @@ const usersSchema = mongoose.Schema(
         status: {
             // required: true,
             type: String,
-            default:"active",
+            default: "active",
             enum: {
                 values: ["active", "blocked"],
                 message: "{VALUE} is wrong. must be active/blocked",
@@ -60,17 +60,12 @@ const usersSchema = mongoose.Schema(
         },
         isVerified: {
             // required: true,
-            type: String,
-            enum: {
-                values: ["verified", "non-verified"],
-                default:"non-verified",
-                message: "{VALUE} is wrong. must be verified/non-verified",
-            },
+            type: Boolean,
+            default: false,
         },
         address: {
             // required: true,
             type: String,
-            
         },
         orders: [
             {
@@ -84,7 +79,7 @@ const usersSchema = mongoose.Schema(
     }
 );
 
-usersSchema.index({name:"text", email:"text",phone:"text"})
+usersSchema.index({ name: "text", email: "text", phone: "text" });
 
 const Users = mongoose.model("users", usersSchema);
 
