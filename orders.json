@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Jacke Masitos",
+        "email": "abdullah@gmail.com",
+        "img": "https://esmarts.qodeinteractive.com/wp-content/uploads/2017/10/instructor-img-2.jpg",
+        "payment_method": "cash on delivery",
+        "discount":5000,
+        "products":[
+            {
+                "product_id":"63a1ac65e6a8c4e967e0e78b",
+                "img": "https://esmarts.qodeinteractive.com/wp-content/uploads/2017/10/instructor-img-2.jpg",
+                "quantity":3,
+                "price": 20000
+            }
+        ],
+        "customer": "63a02091ce8d6c97c7ba7d1f"
+        
+
+    }
+   
+    
+]
+
