@@ -51,12 +51,9 @@ const productsSchema = mongoose.Schema(
         },
         status: {
             
-            type: String,
-            default: "published",
-            enum: {
-                values: ["published", "hidden"],
-                message: "{VALUE} is wrong. must be published/hidden",
-            },
+            type: Boolean,
+            default: true,
+            
         },
         monitor: {
             type: String,

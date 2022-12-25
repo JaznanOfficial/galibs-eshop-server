@@ -6,7 +6,7 @@
       "img": "https://i.ibb.co/BNLmwWM/Web-Design.png",
       "price": 40500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -22,7 +22,7 @@
       "img": "https://i.ibb.co/s9JjPtC/web-development1.png",
       "price": 40500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -38,7 +38,7 @@
       "img": "https://i.ibb.co/193vLWr/app-develop.png",
       "price": 40500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -54,7 +54,7 @@
       "img": "https://i.ibb.co/qJYqHqR/Figma-to-Html.jpg",
       "price": 40500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -70,7 +70,7 @@
       "img": "https://i.ibb.co/r0v8Zg5/Existing-Site-Re-development.png",
       "price": 40500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -86,7 +86,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 40500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -102,7 +102,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 35500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -118,7 +118,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 35500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -134,7 +134,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 35500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -150,7 +150,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 35500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -166,7 +166,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 39500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -182,7 +182,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 39500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -198,7 +198,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 39500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -214,7 +214,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 39500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -230,7 +230,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 39500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -246,7 +246,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 42500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -262,7 +262,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 42500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -278,7 +278,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 42500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -294,7 +294,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 42500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
@@ -310,7 +310,7 @@
       "img": "https://i.ibb.co/xj0865x/Management.jpg",
       "price": 42500,
       "quantity": 20,
-      "status": "published",
+      
       "ssd": "256GB",
       "hdd": "500GB",
       "monitor": "14In",
