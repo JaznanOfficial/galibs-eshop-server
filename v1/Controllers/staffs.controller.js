@@ -1,38 +1,38 @@
 const express = require("express");
 const {
-    getUsersService,
-    postUsersService,
-    deleteUsersService,
-    updateUsersService,
-} = require("../Services/users.service");
+    getStaffsService,
+    postStaffsService,
+    deleteStaffsService,
+    updateStaffsService,
+} = require("../Services/staffs.service");
 
-const getUsersController = async (req, res) => {
+const getStaffsController = async (req, res) => {
     try {
         const query = req.query;
         // console.log(query);
         
-        const { search, skip, page, ...more } = query
-        console.log(more);
         
-        const users = await getUsersService(query);
-        // console.log(users);
-        if (users.length === 0) {
+        
+        
+        const staffs = await getStaffsService(query);
+        // console.log(staffs);
+        if (staffs.length === 0) {
             return res.status(200).json({
                 message: "You've no data or entered a wrong queries. please insert first then find data or check your queries",
             });
         }
-        return res.status(200).json(users);
+        return res.status(200).json(staffs);
     } catch (error) {
         console.log(error);
         res.json(error.message);
     }
 };
-const postUsersController = async (req, res) => {
+const postStaffsController = async (req, res) => {
     try {
         const data = req.body;
         // console.log(data);
-        const users = await postUsersService(data);
-        console.log(users);
+        const staffs = await postStaffsService(data);
+        console.log(staffs);
         res.status(200).json({
             status: "Successful",
             message: "Data added successfully",
@@ -42,19 +42,19 @@ const postUsersController = async (req, res) => {
     }
 };
 
-const deleteUsersController = async (req, res) => {
+const deleteStaffsController = async (req, res) => {
     try {
         const query = req.query;
         // console.log(query);
-        const users = await deleteUsersService(query);
-        console.log(users);
-        if (users.acknowledged && !users.deletedCount) {
+        const staffs = await deleteStaffsService(query);
+        console.log(staffs);
+        if (staffs.acknowledged && !staffs.deletedCount) {
             return res.status(404).json({
                 status: "Failed",
                 message: "We didn't find any user to delete.",
             });
         }
-        else if (users.acknowledged && users.deletedCount) {
+        else if (staffs.acknowledged && staffs.deletedCount) {
             
             return res.status(200).json({
                 status: "Successful",
@@ -69,20 +69,20 @@ const deleteUsersController = async (req, res) => {
         res.json(error);
     }
 };
-const updateUsersController = async (req, res) => {
+const updateStaffsController = async (req, res) => {
     try {
         const query = req.query;
         const data = req.body;
         // console.log(query);
-        const users = await updateUsersService(query, data);
-        console.log(users);
-        if (users.acknowledged && !users.matchedCount) {
+        const staffs = await updateStaffsService(query, data);
+        console.log(staffs);
+        if (staffs.acknowledged && !staffs.matchedCount) {
             return res.status(404).json({
                 status: "Failed",
                 message: "We didn't find any user to update.",
             });
         }
-        else if (users.matchedCount && users.modifiedCount) {
+        else if (staffs.matchedCount && staffs.modifiedCount) {
             
             return res.status(200).json({
                 status: "Successful",
@@ -99,8 +99,8 @@ const updateUsersController = async (req, res) => {
 };
 
 module.exports = {
-    getUsersController,
-    postUsersController,
-    deleteUsersController,
-    updateUsersController,
+    getStaffsController,
+    postStaffsController,
+    deleteStaffsController,
+    updateStaffsController,
 };

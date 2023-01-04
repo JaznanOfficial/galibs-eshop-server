@@ -15,6 +15,10 @@ app.use(express.json())
 const usersRoute = require("./v1/Routes/users.route")
 const productsRoute = require("./v1/Routes/products.route")
 const brandsRoute = require("./v1/Routes/brands.route")
+const staffsRoute = require("./v1/Routes/staffs.route")
+const couponsRoute = require("./v1/Routes/coupons.route")
+const ordersRoute = require("./v1/Routes/orders.route")
+const cartsRoute = require("./v1/Routes/carts.route")
 
 // Routes require start
 
@@ -23,6 +27,10 @@ const brandsRoute = require("./v1/Routes/brands.route")
 app.use('/api/v1/users',usersRoute)
 app.use('/api/v1/products',productsRoute)
 app.use('/api/v1/brands',brandsRoute)
+app.use('/api/v1/staffs',staffsRoute)
+app.use('/api/v1/coupons',couponsRoute)
+app.use('/api/v1/orders',ordersRoute)
+app.use('/api/v1/carts',cartsRoute)
 
 
 
