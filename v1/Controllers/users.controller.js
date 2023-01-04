@@ -9,13 +9,12 @@ const {
 const getUsersController = async (req, res) => {
     try {
         const query = req.query;
-        // console.log(query);
+        console.log(query);
         
-        const { search, skip, page, ...more } = query
-        console.log(more);
+        
         
         const users = await getUsersService(query);
-        // console.log(users);
+        console.log(users);
         if (users.length === 0) {
             return res.status(200).json({
                 message: "You've no data or entered a wrong queries. please insert first then find data or check your queries",
