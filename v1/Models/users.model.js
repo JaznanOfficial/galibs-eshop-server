@@ -51,12 +51,9 @@ const usersSchema = mongoose.Schema(
         },
         status: {
             // required: true,
-            type: String,
-            default: "active",
-            enum: {
-                values: ["active", "blocked"],
-                message: "{VALUE} is wrong. must be active/blocked",
-            },
+            type: Boolean,
+            default: true,
+            
         },
         isVerified: {
             // required: true,
