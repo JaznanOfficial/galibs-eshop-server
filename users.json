@@ -9,7 +9,18 @@
         "role": "user",
         "status": "active"
 
-    }
+    },
+    
+        {
+          "name": "Md Abdur Rahman",
+          "email": "jaznanofficial@gmail.com",
+          "img": "https://lh3.googleusercontent.com/a/AEdFTp6t6gdQxSb4x22hUHsmoY-5Z_wtaQCB6eunMTzhmg=s96-c",
+          "role": "admin",
+          "status": false,
+          "isVerified": false,
+          "orders":["63b80e9044baf79283e7506b"]
+        }
+      
    
     
 ]
