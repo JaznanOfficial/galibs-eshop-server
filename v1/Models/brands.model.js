@@ -6,20 +6,19 @@ const brandSchema = mongoose.Schema(
         name: {
             type: String,
             required: [true, "Name is required"],
+            unique: true,
         },
-        
+
         img: {
             type: String,
             validate: [validator.isURL, "Please provide an URL"],
         },
-        
+
         status: {
             // required: true,
             type: Boolean,
             default: true,
-            
         },
-        
     },
     {
         timestamps: true,
