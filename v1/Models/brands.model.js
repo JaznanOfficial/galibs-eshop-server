@@ -15,12 +15,9 @@ const brandSchema = mongoose.Schema(
         
         status: {
             // required: true,
-            type: String,
-            default: "active",
-            enum: {
-                values: ["active", "hidden"],
-                message: "{VALUE} is wrong. must be active/hidden",
-            },
+            type: Boolean,
+            default: true,
+            
         },
         
     },

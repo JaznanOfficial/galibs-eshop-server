@@ -25,12 +25,10 @@ const couponsSchema = mongoose.Schema(
         },
 
         status: {
-            type: String,
-            default: "active",
-            enum: {
-                values: ["active", "end"],
-                message: "{VALUE} is wrong. must be active/end",
-            },
+            // required: true,
+            type: Boolean,
+            default: true,
+            
         },
     },
     {
