@@ -13,6 +13,7 @@ const getStaffsService = async (query) => {
         return result;
     }
     const result = await Staffs.find(more);
+    return result;
 };
 const postStaffsService = async (data) => {
     const result = await Staffs.create(data);
